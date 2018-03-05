@@ -239,8 +239,9 @@ def evaluate_model(model, descriptions, photos, tokenizer, max_length):
     bleu = corpus_bleu(actual, predicted)
     return bleu
 
+
 # load dev set
-filename = '/Users/elik/PycharmProjects/img_caption/captioning-project/Flickr8k_text/Flickr_8k.devImages.txt'
+filename = 'Flickr8k_text/Flickr_8k.devImages.txt'
 dataset = load_set(filename)
 print('Dataset: %d' % len(dataset))
 # train-test split

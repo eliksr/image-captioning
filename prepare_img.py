@@ -6,7 +6,7 @@ from keras.preprocessing.image import img_to_array
 from keras.applications.vgg16 import preprocess_input
 from keras.layers import Input
 # import gc
-from keras import backend as K
+# from keras import backend as K
 
 
 # extract features from each photo in the directory
@@ -36,7 +36,7 @@ def extract_features(directory):
         print('>%s' % name)
     return features
 
-K.clear_session()
+# K.clear_session()
 # extract features from all images
 directory = 'Flicker8k_Dataset'
 features = extract_features(directory)
